@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "pwa": "ng build && http-server -p 8080 -c-1 dist/mplayer",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
