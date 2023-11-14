@@ -9,6 +9,11 @@ import {ThemePalette} from '@angular/material/core';
 export class AppComponent {
   title = 'mplayer';
   color: ThemePalette = 'primary';
-  checked = false;
+  checked = true;
   disabled = false;
+
+  toggleTheme(){
+    this.checked=!this.checked;
+    console.log("🚀 ~ file: app.component.ts:17 ~ AppComponent ~ toggleTheme ~ ̥:" )
+  }
 }
