@@ -1,20 +1,28 @@
 <div [ngClass]="{'dark-theme':checked}" class="body">
 
-<mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
+<mat-toolbar  color="primary">
+  <button mat-icon-button  >
+    <mat-icon>person</mat-icon>
   </button>
-  <span>My App</span>
-  <span class="example-spacer"></span>
+  <span>PhonePay</span>
+  <span class="spacer"></span>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
+    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M80-680v-200h200v80H160v120H80Zm0 600v-200h80v120h120v80H80Zm600 0v-80h120v-120h80v200H680Zm120-600v-120H680v-80h200v200h-80ZM700-260h60v60h-60v-60Zm0-120h60v60h-60v-60Zm-60 60h60v60h-60v-60Zm-60 60h60v60h-60v-60Zm-60-60h60v60h-60v-60Zm120-120h60v60h-60v-60Zm-60 60h60v60h-60v-60Zm-60-60h60v60h-60v-60Zm240-320v240H520v-240h240ZM440-440v240H200v-240h240Zm0-320v240H200v-240h240Zm-60 500v-120H260v120h120Zm0-320v-120H260v120h120Zm320 0v-120H580v120h120Z"/></svg>
   </button>
+
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
+    <mat-icon>notifications_none</mat-icon>
+  </button>
+
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>help</mat-icon>
   </button>
 </mat-toolbar>
+<mat-card class="carousel">
 
-
+<img mat-card-image src={{carouselsUrl}}>
+</mat-card> 
+<!-- 
   <mat-card class="result">
     <mat-card-content>
       <h2 class="example-h2">Result</h2>
@@ -31,5 +39,5 @@
       {{checked}}
     </section>
   </mat-card-content>
-</mat-card>
+</mat-card> -->
 </div>

@@ -7,3 +7,17 @@
     // margin: 1rem 1rem auto;
     height: 100vh;
 }
+
+.mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.spacer{
+    flex:1 1 auto
+}
+
+.carousel{
+    margin: 0.75rem;
+}
