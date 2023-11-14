@@ -41,11 +41,11 @@ export class AppComponent implements OnInit {
 
   carouselsUpdater() {
     let count = 0;
-    setInterval(() => {
-      this.dynamicCarousel.pop();
-      this.dynamicCarousel.push(this.carousels[count]);
-      count++;
-      count >= this.carousels.length ? (count = 0) : '';
-    }, 5000);
+    // setInterval(() => {
+    //   this.dynamicCarousel.pop();
+    //   this.dynamicCarousel.push(this.carousels[count]);
+    //   count++;
+    //   count >= this.carousels.length ? (count = 0) : '';
+    // }, 5000);
   }
 }
