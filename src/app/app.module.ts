@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ScanComponent } from './scan/scan.component'
+import { NgxScannerQrcodeModule, LOAD_WASM } from 'ngx-scanner-qrcode';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'scan', component: ScanComponent },
 ]
 
+LOAD_WASM().subscribe();
 @NgModule({
   declarations: [AppComponent, HomeComponent, ScanComponent],
   imports: [
@@ -32,6 +34,7 @@ const routes: Routes = [
     }),
     FormsModule,
     AppRoutingModule,
+    NgxScannerQrcodeModule
   ],
   providers: [],
   bootstrap: [AppComponent],

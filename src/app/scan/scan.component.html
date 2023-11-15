@@ -1,1 +1,20 @@
-<p>scan works!</p>
+<div   >
+
+    <mat-card (click)="divclicked(action)" >
+        <!-- <mat-card-content>  -->
+            <a (click)="action.isStart ? action.stop() : action.start()">
+                <ngx-scanner-qrcode (start)="action.start()" #action="scanner" [config]="{isBeep:false}"></ngx-scanner-qrcode>
+            </a>
+            <!-- </mat-card-content> -->
+        </mat-card>
+</div>
+     
+<!-- data  -->
+ 
+<span>{{ action.data.value | json }}</span><!-- value -->
+<span>{{ action.data | async | json }}</span><!-- async -->
+
+<!-- Loading -->
+<!-- <p *ngIf="action.isLoading" >⌛ Loading...</p> -->
+
+<!-- start -->
